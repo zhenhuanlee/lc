@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	a := map[int]int{}
-	fmt.Println(a[1])
+	a := make(map[int]int)
+
+	a[1] = 1
+	a = nil
+	a[2] = 1
+	fmt.Println(nil)
 }
