@@ -1,12 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	a := make(map[int]int)
-
-	a[1] = 1
-	a = nil
-	a[2] = 1
-	fmt.Println(nil)
+	fmt.Println(math.MaxInt32, math.MinInt32)
 }
